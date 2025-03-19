@@ -8,7 +8,7 @@ export default function About() {
   })
 
   const [buttonText, setButtontext] = useState("Enable Light Mode");
-
+// new changes 
   const toggleSyle = () =>{
     if(myStyle.color === 'white'){
         setMyStyle({
