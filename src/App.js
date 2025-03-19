@@ -10,6 +10,7 @@ function App() {
       <div className="container my-3">
       <Myform heading="Enter The Text To Analize" />
       <About/>
+      {/* some changes to be done  */}
       </div>
       
     </>
