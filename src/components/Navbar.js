@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 
 
 export default function Navbar(props) {
-// some changes to be done 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
     <div className="container-fluid">

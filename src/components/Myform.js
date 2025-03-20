@@ -4,6 +4,7 @@ import React, { useState } from "react";
 //States usage and Learning
 export default function (props) {
 
+  // these handles toupper case handler
     const handleUpClick = () =>{
         let newText = text.toUpperCase();
         setText(newText);
@@ -14,20 +15,23 @@ export default function (props) {
       setText(event.target.value);
     }
 
+    // these is clear action handler
     const handleClrClick = () => {
       setText("");
     }
     
+    // these is remove spaces action handler
     const handleRmSpaceClick = () => {
       setText(text.replaceAll(" " , ""));
     }
 
+    // these handles tolower case actions
     const handleLoClick = () =>{
       let newText = text.toLowerCase();
       setText(newText);
     }
 
-    //useage of a state
+    // useage of a state
     const [text, setText] = useState('');
     // text = 'newText'; Wrong way to user states use a fucnction setText
     // setText("Works!!"); correct way 
