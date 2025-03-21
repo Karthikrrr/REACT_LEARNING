@@ -56,6 +56,7 @@ export default function (props) {
 
     </div>
     <div className="container my-3">
+      //changes here ok fine 
       <h1>Your Text Summary</h1>
       <p>{text.split(" ").length} words and {text.length} character</p>
       <p>{0.008 * text.split(" ").length} Minutes To Read  </p>
