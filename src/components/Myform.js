@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { loremIpsum } from 'react-lorem-ipsum';
 
 //useState is hook
 //States usage and Learning
@@ -31,6 +32,19 @@ export default function (props) {
       setText(newText);
     }
 
+    // Copy to ClipBoard
+    const handleCopy = () => {
+        var text = document.getElementById("mytextarea");
+        text.select();
+        navigator.clipboard.writeText(text.value);
+    }
+
+    //remove Extra Spaces
+    const removeExtraSpace = () =>{
+        setText(text.split(/[ ]+/).join(" "))
+    }
+
+
     // useage of a state
     const [text, setText] = useState('');
     // text = 'newText'; Wrong way to user states use a fucnction setText
@@ -53,6 +67,8 @@ export default function (props) {
       <button className="btn btn-primary mx-2" onClick={handleLoClick}>Convert To LowerCase</button>
       <button className="btn btn-primary mx-2" onClick={handleClrClick}>Clear Text</button>
       <button className="btn btn-primary mx-2" onClick={handleRmSpaceClick}>Remove Spaces</button>
+      <button className="btn btn-primary mx-2" onClick={handleCopy}>Copy Text</button>
+      <button className="btn btn-primary mx-2" onClick={removeExtraSpace}>Remove Extra Spaces</button>
 
     </div>
     <div className="container my-3">

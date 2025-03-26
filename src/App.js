@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <>
-      <Navbar title='hello'/>
+      <Navbar title='Text Manipulation'/>
       <div className="container my-3">
       <Myform heading="Enter The Text To Analize" />
       <About/>
